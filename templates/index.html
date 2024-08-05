@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+
+<body>
+    <h1 class="main-title">URL Shortener</h1>
+    <p class="description">Create shortened URLs easy to share</p>
+    <form class="form" method="POST">
+        <label class="label1" for="original_url">Paste Your URL Here</label>
+        <input class="url-input" type="text" id="original_url" placeholder="Enter URL" name="original_url">
+        <button class="btn" type="submit">Shorten</button>
+    </form>
+
+    {% if short_url %}
+    <div class="flex-container">
+        <h2 class="short-heading">Shortened URL:</h2>
+        <a class="shorten-url" id="textToCopy" href="{{ short_url }}" target="_blank">{{ short_url }}</a>
+        <button class="btn-copy" onclick="copyText()">Copy</button>
+    </div>
+    {% endif %}
+    <script>
+        function copyText() {
+            const textToCopy = document.getElementById('textToCopy').textContent;
+            navigator.clipboard.writeText(textToCopy)
+                .then(() => {
+                    alert('Text copied to clipboard: ' + textToCopy);
+                })
+                .catch(err => {
+                    console.error('Failed to copy text: ', err);
+                });
+        }
+    </script>
+</body>
+
+</html>

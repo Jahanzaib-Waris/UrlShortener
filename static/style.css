@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inter;
+}
+
+@font-face {
+    font-family: inter;
+    src: url('/static/inter.ttf');
+}
+
+.main-title {
+    color: #E4003A;
+    text-align: center;
+    font-size: 54px;
+    margin-top: 4rem;
+}
+
+.description {
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 1.5rem;
+}
+
+.label1 {
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.form {
+    border-radius: 28px;
+    box-shadow: 1px 1px 4px 1px #272727;
+    width: 46rem;
+    height: 16rem;
+    margin: 3rem auto;
+    padding: 4rem 8rem;
+}
+
+.url-input {
+    border: 1px solid #E4003A;
+    font-size: 14px;
+    padding: 0.8rem 1rem;
+    width: 24rem;
+}
+
+.btn {
+    padding: 0.8rem 1rem;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    border: 1px solid #E4003A;
+    background-color: #E4003A;
+    border: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #e40039c7;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+    border: 1px solid #E4003A;
+    width: 45%;
+    margin: 0 auto;
+}
+
+.short-heading {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 0.6rem;
+}
+
+.shorten-url {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #E4003A;
+    text-decoration: none;
+}
+
+.btn-copy {
+    padding: 0.8rem 1.5rem;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    border: 1px solid #E4003A;
+    background-color: #E4003A;
+    border: none;
+}
+
+.btn-copy:hover {
+    cursor: pointer;
+    background-color: #e40039c7;
+}
